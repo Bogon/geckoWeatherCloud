@@ -1,0 +1,17 @@
+<MKM version="2.0" imageFileUrl="file:///Users/zhangqi/Desktop/2020-04-10%2018-13-19.png">
+  <Marks>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="1118266" offsetX="25" offsetY="10" x="228" y="34"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="4754655" offsetX="25" offsetY="10" x="161" y="77"/>
+    <LengthMark direction="3" color="16711680" length="83" x="124" y="205"/>
+    <LengthMark direction="12" color="16711680" length="9" x="128" y="339"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3289183" offsetX="25" offsetY="10" x="225" y="333"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="1315645" offsetX="25" offsetY="10" x="179" y="316"/>
+    <LengthMark direction="3" color="16711680" length="5" x="202" y="354"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3948633" offsetX="25" offsetY="10" x="412" y="133"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15924223" offsetX="25" offsetY="10" x="410" y="98"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="16597016" offsetX="25" offsetY="10" x="426" y="210"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="13558525" offsetX="25" offsetY="10" x="413" y="271"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="13690362" offsetX="25" offsetY="10" x="400" y="333"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="13690362" offsetX="25" offsetY="10" x="409" y="302"/>
+  </Marks>
+</MKM>

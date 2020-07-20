@@ -1,0 +1,49 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+use_frameworks!
+
+project 'geckoWeatherCloud.xcodeproj'
+target 'geckoWeatherCloud' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  # Rx
+  pod 'RxSwift', '~> 5.1.1'                       # RxSwift is a Swift implementation of Reactive Extensions
+  pod 'RxCocoa', '~> 5.1.1'                       # RxSwift Cocoa extensions
+  pod 'RxBlocking', '~> 5.1.1'                    # RxSwift Blocking operatos
+  pod 'RxAlamofire', '~> 5.5.0'                   # RxSwift HTTP networking in Swift Alamofire
+  pod 'NSObject+Rx', '~> 5.1.0'                   # Handy RxSwift extensions on NSObject.
+  
+#  # Networking
+  pod 'Moya', '~> 14.0.0'
+  pod 'Moya/RxSwift', '~> 14.0.0'
+  pod 'ObjectMapper', '~> 4.2.0'                  # Simple JSON Object mapping written in Swift
+  pod 'PromiseKit', :inhibit_warnings => true     # Promises for Swift & ObjC.
+  
+  # Data Store
+  pod 'AwesomeCache', '~> 5.0'
+  pod 'LeanCloud'
+  
+  # UI
+  pod 'SnapKit'                                    # Harness the power of auto layout
+  pod 'Hue'
+  pod 'MJRefresh'
+  pod 'MarqueeLabel'                              # 跑马灯展示框架
+  pod 'paper-onboarding'
+  pod 'AMScrollingNavbar'
+  
+  # Map SDK
+  pod 'AMapLocation'                              # 定位功能
+  pod 'AMap3DMap'                                 # 3D地图
+  pod 'AMapSearch'                                # 搜索功能
+  
+  # System And Security
+  pod 'DeviceKit'
+
+  # Data persistence
+  pod 'FMDB', '~> 2.7.5'
+  pod 'LKDBHelper', '~> 2.5.3', :inhibit_warnings => true
+
+  # 添加UIy调试框架
+  pod 'LookinServer', :configurations => ['Debug']
+
+end

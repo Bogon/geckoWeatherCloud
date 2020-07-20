@@ -1,0 +1,164 @@
+PODS:
+  - Alamofire (5.2.1)
+  - AMap3DMap (7.5.0):
+    - AMapFoundation (~> 1.6.3)
+  - AMapFoundation (1.6.3)
+  - AMapLocation (2.6.5):
+    - AMapFoundation (~> 1.6.3)
+  - AMapSearch (7.3.0):
+    - AMapFoundation (~> 1.6.3)
+  - AMScrollingNavbar (5.6.1)
+  - AwesomeCache (5.0)
+  - DeviceKit (3.2.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GRDB.swift (4.14.0):
+    - GRDB.swift/standard (= 4.14.0)
+  - GRDB.swift/standard (4.14.0)
+  - Hue (5.0.0)
+  - LeanCloud (17.5.7):
+    - LeanCloud/RTM (= 17.5.7)
+  - LeanCloud/Foundation (17.5.7):
+    - Alamofire (~> 5.0)
+  - LeanCloud/RTM (17.5.7):
+    - GRDB.swift (~> 4.9)
+    - LeanCloud/Foundation (= 17.5.7)
+    - Starscream (~> 3.1)
+    - SwiftProtobuf (~> 1.8)
+  - LKDBHelper (2.5.3):
+    - LKDBHelper/standard (= 2.5.3)
+  - LKDBHelper/standard (2.5.3):
+    - FMDB
+  - LookinServer (1.0.0)
+  - MarqueeLabel (4.0.2)
+  - MJRefresh (3.4.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - ObjectMapper (4.2.0)
+  - paper-onboarding (6.1.5)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - RxAlamofire (5.5.0):
+    - RxAlamofire/Core (= 5.5.0)
+  - RxAlamofire/Core (5.5.0):
+    - Alamofire (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+  - Starscream (3.1.1)
+  - SwiftProtobuf (1.10.1)
+
+DEPENDENCIES:
+  - AMap3DMap
+  - AMapLocation
+  - AMapSearch
+  - AMScrollingNavbar
+  - AwesomeCache (~> 5.0)
+  - DeviceKit
+  - FMDB (~> 2.7.5)
+  - Hue
+  - LeanCloud
+  - LKDBHelper (~> 2.5.3)
+  - LookinServer
+  - MarqueeLabel
+  - MJRefresh
+  - Moya (~> 14.0.0)
+  - Moya/RxSwift (~> 14.0.0)
+  - "NSObject+Rx (~> 5.1.0)"
+  - ObjectMapper (~> 4.2.0)
+  - paper-onboarding
+  - PromiseKit
+  - RxAlamofire (~> 5.5.0)
+  - RxBlocking (~> 5.1.1)
+  - RxCocoa (~> 5.1.1)
+  - RxSwift (~> 5.1.1)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AMap3DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - AMScrollingNavbar
+    - AwesomeCache
+    - DeviceKit
+    - FMDB
+    - GRDB.swift
+    - Hue
+    - LeanCloud
+    - LKDBHelper
+    - LookinServer
+    - MarqueeLabel
+    - MJRefresh
+    - Moya
+    - "NSObject+Rx"
+    - ObjectMapper
+    - paper-onboarding
+    - PromiseKit
+    - RxAlamofire
+    - RxBlocking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Starscream
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AMap3DMap: fc7c911f5cf079d544ad7faec256c9554cbbb202
+  AMapFoundation: 9ed923193b357ebb30a073e9fe255d3c24054d5a
+  AMapLocation: c566d448285cd502c1e313063d9e2460bd4d7100
+  AMapSearch: a048bcca3bf0b8083345070e1f193f814bd8dc01
+  AMScrollingNavbar: 602dd7a26efd0edb40d67ec20b5ee80b9f573bbb
+  AwesomeCache: d8906955242173357caa0be0214d5e77dec32cc5
+  DeviceKit: d081659419cce07c0b5239dbc9fb39ed7413c7fe
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GRDB.swift: 8cc3ab7c8b8b4ac1761deb8dca4b51c1c9d429f8
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  LeanCloud: 23e3db9769eaf018e275008734b3b2846c154f77
+  LKDBHelper: 26b47fdd6f4c800ef83c478554829ff8a1da20c5
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+  MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  RxAlamofire: 22287c710761466d0123504c566a8381520d4d63
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftProtobuf: 071357dcd3b2cad85a303e538dae2e97ed0f2950
+
+PODFILE CHECKSUM: de0149e396e2e1404b531fb25bc6876432f41868
+
+COCOAPODS: 1.9.3
