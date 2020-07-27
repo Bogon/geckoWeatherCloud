@@ -20,7 +20,6 @@ extension RealTimeForcastController {
         view.backgroundColor = UIColor.init(hex: "#11103a")
         
         initSubView()
-        initSetting()
     }
     
     private func initSubView() {
@@ -34,17 +33,6 @@ extension RealTimeForcastController {
         
         contentScrollView.contentSize = CGSize(width: ContentScrollViewWidth, height: UIScreen.main.bounds.height + 44)
         
-    }
-    
-    private func initSetting() {
-        let closeItem:UIBarButtonItem = UIBarButtonItem.init(image: Asset.setting.image, style: .plain, target: self, action: #selector(pop))
-        closeItem.tintColor = .white
-        navigationItem.leftBarButtonItem = closeItem
-    }
-        
-    @objc private func pop() {
-        // 显示侧栏菜单
-        navigationController?.pushViewController(SettingController(), animated: true)
     }
     
     override func viewDidLayoutSubviews() {

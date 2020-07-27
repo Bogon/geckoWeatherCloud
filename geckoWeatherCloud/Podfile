@@ -12,12 +12,15 @@ target 'geckoWeatherCloud' do
   pod 'RxBlocking', '~> 5.1.1'                    # RxSwift Blocking operatos
   pod 'RxAlamofire', '~> 5.5.0'                   # RxSwift HTTP networking in Swift Alamofire
   pod 'NSObject+Rx', '~> 5.1.0'                   # Handy RxSwift extensions on NSObject.
+  pod 'RxDataSources'
   
 #  # Networking
   pod 'Moya', '~> 14.0.0'
   pod 'Moya/RxSwift', '~> 14.0.0'
   pod 'ObjectMapper', '~> 4.2.0'                  # Simple JSON Object mapping written in Swift
   pod 'PromiseKit', :inhibit_warnings => true     # Promises for Swift & ObjC.
+  pod 'Connectivity'
+  pod 'Kingfisher'
   
   # Data Store
   pod 'AwesomeCache', '~> 5.0'
@@ -30,12 +33,19 @@ target 'geckoWeatherCloud' do
   pod 'MarqueeLabel'                              # 跑马灯展示框架
   pod 'paper-onboarding'
   pod 'AMScrollingNavbar'
+  pod 'CBFlashyTabBarController'
+  pod 'Reusable'
   
   # Map SDK
   pod 'AMapLocation'                              # 定位功能
   pod 'AMap3DMap'                                 # 3D地图
   pod 'AMapSearch'                                # 搜索功能
-  
+  pod 'JVFloatLabeledTextField'
+  pod 'IQKeyboardManagerSwift'
+  pod 'HGPlaceholders'
+
+  pod 'Bugly'
+    
   # System And Security
   pod 'DeviceKit'
 

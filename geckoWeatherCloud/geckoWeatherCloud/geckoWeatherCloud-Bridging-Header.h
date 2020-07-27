@@ -17,4 +17,6 @@
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+CCUD.h"
 
+#import "TABAnimated.h"
+
 #endif /* geckoWeatherCloud_Bridging_Header_h */

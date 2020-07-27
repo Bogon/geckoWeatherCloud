@@ -54,16 +54,42 @@ internal enum Asset {
   internal static let stores = ImageAsset(name: "Stores")
   internal static let wallet = ImageAsset(name: "Wallet")
   internal static let aqi = ImageAsset(name: "aqi")
+  internal static let arrowSetting = ImageAsset(name: "arrow_setting")
+  internal static let avatarDefault = ImageAsset(name: "avatar_default")
+  internal static let avatarLogin = ImageAsset(name: "avatar_login")
+  internal static let back = ImageAsset(name: "back")
   internal static let barbuttonBack = ImageAsset(name: "barbutton_back")
   internal static let bottom = ImageAsset(name: "bottom")
+  internal static let clearCache = ImageAsset(name: "clear_cache")
+  internal static let collect = ImageAsset(name: "collect")
+  internal static let collectSelected = ImageAsset(name: "collect_selected")
+  internal static let collectionJust = ImageAsset(name: "collection_just")
+  internal static let collectionList = ImageAsset(name: "collection_list")
+  internal static let cover = ImageAsset(name: "cover")
+  internal static let createNew = ImageAsset(name: "create_new")
+  internal static let headBg = ImageAsset(name: "head_bg")
   internal enum Images {
     internal static let imgPARTLYCLOUDYDAY0 = ImageAsset(name: "img_PARTLY_CLOUDY_DAY_0")
     internal static let imgPARTLYCLOUDYDAY1 = ImageAsset(name: "img_PARTLY_CLOUDY_DAY_1")
     internal static let imgPARTLYCLOUDYDAY2 = ImageAsset(name: "img_PARTLY_CLOUDY_DAY_2")
   }
+  internal static let jionJust = ImageAsset(name: "jion_just")
+  internal static let jionList = ImageAsset(name: "jion_list")
+  internal static let loginCurrent = ImageAsset(name: "login_current")
   internal static let logo = ImageAsset(name: "logo")
+  internal static let logout = ImageAsset(name: "logout")
+  internal static let lookJust = ImageAsset(name: "look_just")
+  internal static let lookList = ImageAsset(name: "look_list")
   internal static let newdrawerForward = ImageAsset(name: "newdrawer_forward")
+  internal static let `protocol` = ImageAsset(name: "protocol")
+  internal static let renzheng = ImageAsset(name: "renzheng")
+  internal static let rijie = ImageAsset(name: "rijie")
   internal static let setting = ImageAsset(name: "setting")
+  internal static let sousuo = ImageAsset(name: "sousuo")
+  internal static let validateCorrect = ImageAsset(name: "validate_correct")
+  internal static let validateWrong = ImageAsset(name: "validate_wrong")
+  internal static let versionUpdate = ImageAsset(name: "version_update")
+  internal static let weatherIcon = ImageAsset(name: "weather_icon")
   internal enum WeathewrIcons {
     internal static let clearDayC = ImageAsset(name: "CLEAR_DAY-C")
     internal static let clearNightC = ImageAsset(name: "CLEAR_NIGHT-C")
@@ -107,14 +133,40 @@ internal enum Asset {
     stores,
     wallet,
     aqi,
+    arrowSetting,
+    avatarDefault,
+    avatarLogin,
+    back,
     barbuttonBack,
     bottom,
+    clearCache,
+    collect,
+    collectSelected,
+    collectionJust,
+    collectionList,
+    cover,
+    createNew,
+    headBg,
     Images.imgPARTLYCLOUDYDAY0,
     Images.imgPARTLYCLOUDYDAY1,
     Images.imgPARTLYCLOUDYDAY2,
+    jionJust,
+    jionList,
+    loginCurrent,
     logo,
+    logout,
+    lookJust,
+    lookList,
     newdrawerForward,
+    `protocol`,
+    renzheng,
+    rijie,
     setting,
+    sousuo,
+    validateCorrect,
+    validateWrong,
+    versionUpdate,
+    weatherIcon,
     WeathewrIcons.clearDayC,
     WeathewrIcons.clearNightC,
     WeathewrIcons.cloudyC,

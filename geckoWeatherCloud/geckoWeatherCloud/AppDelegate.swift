@@ -8,6 +8,9 @@
 
 import UIKit
 import LeanCloud
+import CBFlashyTabBarController
+import AMScrollingNavbar
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        LCApplication.logLevel = .all
+        LCApplication.logLevel = .debug
         
         do {
             try LCApplication.default.set(
@@ -26,17 +29,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(error)
         }
         
+        CBFlashyTabBar.appearance().tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.431372549, alpha: 1)
+        CBFlashyTabBar.appearance().barTintColor = .white
+        
         /// 首次登录
         FirstLaunch.firstLaunch()
-        /// 初始化本地城市数据
-        CityManager.share.initCityData()
+
+        /// 初始化数据库信息
+        DatabaseInitlize.share.databaseInitlize()
+        
         /// 初始化地图
         LocationManager.shared.configLocation()
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         
-        window?.rootViewController = SwitchRootController.getRootController()
+        if FirstLaunch.isFirstLaunch() {
+            window?.rootViewController = OnBoardingController()
+        } else {
+            window?.rootViewController = getRootController()
+        }
+        
+        
         /*
         获取数据
         */
@@ -53,7 +67,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             case .failure(error: _):
                 /// 设置根视图
-                self?.window?.rootViewController = SwitchRootController.getRootController()
+                
+                if FirstLaunch.isFirstLaunch() {
+                    self?.window?.rootViewController = OnBoardingController()
+                } else {
+                    
+                    self?.window?.rootViewController = self?.getRootController()
+                }
+                
             }
         }
         
@@ -68,6 +89,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        TABAnimated.shared()?.initWithOnlySkeleton()
+        TABAnimated.shared()?.openLog = true
+        
+        print("Date: \(Date().millisecond)")
+        
+        // 更新登录人的时间
+        UserInfoHandle.share.relogin()
+        IQKeyboardManager.shared.enable = true
+        
         /// 开启定位
         LocationManager.shared.locationComplete(withLocationCompleteHandle: { (province, city, district,  latitude, longitude) in
             NotificationCenter.default.post(name: Notification.Name.updateLocaitonCity, object: nil, userInfo: nil)
@@ -81,3 +111,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    /// 创建跟控制器
+    func getRootController() -> CBFlashyTabBarController {
+        
+        let dailyController = DailyController()
+        dailyController.tabBarItem = UITabBarItem(title: "日结", image: Asset.rijie.image, tag: 0)
+
+        let weekdayController = WeekDayController()
+        weekdayController.tabBarItem = UITabBarItem(title: "周末", image: Asset.sousuo.image, tag: 1)
+        
+        let realTimeForcastController = RealTimeForcastController()
+        realTimeForcastController.tabBarItem = UITabBarItem(title: "天气", image: Asset.weatherIcon.image, tag: 2)
+        
+        let settingController = SettingController()
+        settingController.tabBarItem = UITabBarItem(title: "设置", image: Asset.setting.image, tag: 3)
+
+        let tabBarController = CBFlashyTabBarController()
+         tabBarController.viewControllers = [
+             ScrollingNavigationController(rootViewController: dailyController),
+             ScrollingNavigationController(rootViewController: weekdayController),
+             ScrollingNavigationController(rootViewController: realTimeForcastController),
+             ScrollingNavigationController(rootViewController: settingController)
+        ]
+        return tabBarController
+    }
+}

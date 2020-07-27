@@ -15,16 +15,6 @@ struct SwitchRootController {
     /// 切换当前控制器为根控制器
     static func switchto() {
         let delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        let realFocastNavi: ScrollingNavigationController = ScrollingNavigationController(rootViewController: RealTimeForcastController())
-        delegate.window?.rootViewController = realFocastNavi
-    }
-    
-    /// 获取跟控制器
-    static func getRootController() -> UIViewController {
-        if FirstLaunch.isFirstLaunch() {
-            return OnBoardingController()
-        } else {
-            return ScrollingNavigationController(rootViewController: RealTimeForcastController())
-        }
+        delegate.window?.rootViewController = delegate.getRootController()
     }
 }

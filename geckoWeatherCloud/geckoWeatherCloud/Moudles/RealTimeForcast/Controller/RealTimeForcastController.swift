@@ -110,7 +110,9 @@ class RealTimeForcastController: ScrollingNavigationViewController, ScrollingNav
     /// 未来七天页面逻辑绑定
     private func bindingSenvenDayTo(_ value: CityWeatherInfoResponseModel) {
         /// 跳转到未来七天的页面
-        navigationController?.pushViewController(SevenDayWeatherInfoController(value: value), animated: true)
+        let sevenDayWeatherInfoController: SevenDayWeatherInfoController = SevenDayWeatherInfoController(value: value)
+        sevenDayWeatherInfoController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(sevenDayWeatherInfoController, animated: true)
     }
 
     
