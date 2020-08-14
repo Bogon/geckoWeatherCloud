@@ -29,6 +29,10 @@
 	<string>壁虎天气需要你的位置权限用于显示和搜索位置</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>壁虎天气需要你的位置权限用于显示和搜索位置</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -23,6 +23,9 @@ PODS:
   - HGPlaceholders (0.4.0)
   - Hue (5.0.0)
   - IQKeyboardManagerSwift (6.5.5)
+  - JCore (2.1.4-noidfa)
+  - JPush (3.2.4-noidfa):
+    - JCore (< 3.0.0, >= 2.0.0)
   - JVFloatLabeledTextField (1.2.2)
   - Kingfisher (5.14.1):
     - Kingfisher/Core (= 5.14.1)
@@ -103,6 +106,8 @@ DEPENDENCIES:
   - HGPlaceholders
   - Hue
   - IQKeyboardManagerSwift
+  - JCore (= 2.1.4-noidfa)
+  - JPush (= 3.2.4-noidfa)
   - JVFloatLabeledTextField
   - Kingfisher
   - LeanCloud
@@ -143,6 +148,8 @@ SPEC REPOS:
     - HGPlaceholders
     - Hue
     - IQKeyboardManagerSwift
+    - JCore
+    - JPush
     - JVFloatLabeledTextField
     - Kingfisher
     - LeanCloud
@@ -184,6 +191,8 @@ SPEC CHECKSUMS:
   HGPlaceholders: fd580aaf6050782bf2ee51eb62ed499ded6615b7
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  JCore: 2f15311e6889ab43ed5d629802ef793cac566465
+  JPush: 2ff11d3013b360bc1b7da16741027e88f12fe3e6
   JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   LeanCloud: 23e3db9769eaf018e275008734b3b2846c154f77
@@ -207,6 +216,6 @@ SPEC CHECKSUMS:
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftProtobuf: 071357dcd3b2cad85a303e538dae2e97ed0f2950
 
-PODFILE CHECKSUM: fcf1f800ddf027d7caaa97aedc7fccb846c07b7d
+PODFILE CHECKSUM: 144da94bfac0b0d17e32863e52630d29b12f256c
 
 COCOAPODS: 1.9.3

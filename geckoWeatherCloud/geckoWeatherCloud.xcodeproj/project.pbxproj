@@ -318,6 +318,8 @@
 		3DF1692224A388620025057B /* SkyconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyconType.swift; sourceTree = "<group>"; };
 		3DF1692424A389E60025057B /* FifteenDayWeatherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenDayWeatherInfoModel.swift; sourceTree = "<group>"; };
 		3DF1692624A38BBC0025057B /* WeatherInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewModel.swift; sourceTree = "<group>"; };
+		3DF906D924D6867F003DCF14 /* 壁虎兼职Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "壁虎兼职Debug.entitlements"; sourceTree = "<group>"; };
+		3DF906DA24D68695003DCF14 /* 壁虎兼职.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "壁虎兼职.entitlements"; sourceTree = "<group>"; };
 		3DFAE26E24CE58A0001D8994 /* TABAnimatedDocumentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimatedDocumentMethod.h; sourceTree = "<group>"; };
 		3DFAE26F24CE58A0001D8994 /* TABAnimatedCacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABAnimatedCacheModel.m; sourceTree = "<group>"; };
 		3DFAE27024CE58A0001D8994 /* TABAnimatedCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimatedCacheManager.h; sourceTree = "<group>"; };
@@ -620,6 +622,8 @@
 		3D9E559324A21ED10006CF82 /* geckoWeatherCloud */ = {
 			isa = PBXGroup;
 			children = (
+				3DF906DA24D68695003DCF14 /* 壁虎兼职.entitlements */,
+				3DF906D924D6867F003DCF14 /* 壁虎兼职Debug.entitlements */,
 				3DF168DC24A361E20025057B /* ThirdLibrary */,
 				3DF168B624A31D8C0025057B /* Handle */,
 				3DF168AB24A2FF860025057B /* Extentions */,
@@ -2194,8 +2198,9 @@
 			baseConfigurationReference = D55EFBEE6E8D1A223083DE50 /* Pods-geckoWeatherCloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "geckoWeatherCloud/壁虎兼职Debug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = HK6M22QSAF;
 				INFOPLIST_FILE = geckoWeatherCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2203,7 +2208,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuebaonline.geckoWeatherCloud;
 				PRODUCT_NAME = "壁虎兼职";
 				SWIFT_OBJC_BRIDGING_HEADER = "geckoWeatherCloud/geckoWeatherCloud-Bridging-Header.h";
@@ -2217,8 +2222,9 @@
 			baseConfigurationReference = 3B4F30C97F8DD40E21805E16 /* Pods-geckoWeatherCloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "geckoWeatherCloud/壁虎兼职.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = HK6M22QSAF;
 				INFOPLIST_FILE = geckoWeatherCloud/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2226,7 +2232,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuebaonline.geckoWeatherCloud;
 				PRODUCT_NAME = "壁虎兼职";
 				SWIFT_OBJC_BRIDGING_HEADER = "geckoWeatherCloud/geckoWeatherCloud-Bridging-Header.h";

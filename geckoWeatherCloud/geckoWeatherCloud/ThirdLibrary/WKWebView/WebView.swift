@@ -217,7 +217,15 @@ extension WebView: WKNavigationDelegate{
                 if let mobileURL:URL = URL(string: requestURL) {
                     UIApplication.shared.open(mobileURL, options: [:], completionHandler: nil)
                 }
-            }
+            }  else if requestURL.contains("qq") {
+                  if let mobileURL:URL = URL(string: requestURL) {
+                      UIApplication.shared.open(mobileURL, options: [:], completionHandler: nil)
+                  }
+              } else if requestURL.contains("weixin") {
+                  if let mobileURL:URL = URL(string: requestURL) {
+                      UIApplication.shared.open(mobileURL, options: [:], completionHandler: nil)
+                  }
+              }
         }
         switch navigationAction.navigationType {
         case WKNavigationType.linkActivated:
